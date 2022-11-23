@@ -44,7 +44,7 @@
         question: "Which event occurs when the user clicks on an HTML element?",
         choices: ["1. onclick", "2. onchange", "3. onmouseover", "4. onmouseclick"],
         answer: "1. onclick"
-    }
+    },
     {
         question: "Which of the following is a statement that can be used to terminate a loop, switch or label statement?",
         choices: ["1. break", "2. stop", "3. halt", "4. exit"],
