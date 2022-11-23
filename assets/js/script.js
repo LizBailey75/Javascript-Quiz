@@ -47,7 +47,7 @@
     }
     {
         question: "Which of the following is a statement that can be used to terminate a loop, switch or label statement?",
-        choices: {"1. break", "2. stop", "3. halt", "4. exit"},
+        choices: ["1. break", "2. stop", "3. halt", "4. exit"],
         answer: "1. break"
     }
 ];
