@@ -1,53 +1,53 @@
  // Define a set of questions
  const questions = [
     {
-        question: "Inside which HTML element do we put the JavaScript?",
-        choices: ["1. <js>", "2. <javascript>", "3. <scripting>", "4. <script>"],
+        questionText: "Inside which HTML element do we put the JavaScript?",
+        options: ["1. <js>", "2. <javascript>", "3. <scripting>", "4. <script>"],
         answer: "4. <script>"
     },
     {
-        question: "String values must be enclosed within _____ when being assigned to variables.",
-        choices: ["1. commas", "2. curly brackets", "3. quotes", "4. parenthesis"],
+        questionText: "String values must be enclosed within _____ when being assigned to variables.",
+        options: ["1. commas", "2. curly brackets", "3. quotes", "4. parenthesis"],
         answer: "3. quotes"
     },
     {
-        question: "Commonly used data types DO NOT include:",
-        choices: ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
+        questionText: "Commonly used data types DO NOT include:",
+        options: ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
         answer: "3. alerts"
     },
     {
-        question: "How do you call a function named myFunction?",
-        choices: ["1. call myFunction()", "2. call function myFunction()", "3. myFunction()", "4. call myFunction"],
-        answer: "3. myFunctions()"
+        questionText: "How do you call a function named myFunction?",
+        options: ["1. call myFunction()", "2. call function myFunction()", "3. myFunction()", "4. call myFunction"],
+        answer: "3. myFunction()"
     },
     {
-        question: "To see if two variables are equal in an if / else statement you would use ____.",
-        choices: ["1. =", "2. ==", "3. 'equals'", "4. !="],
+        questionText: "To see if two variables are equal in an if / else statement you would use ____.",
+        options: ["1. =", "2. ==", "3. 'equals'", "4. !="],
         answer: "2. =="
     },
     {
-        question: "The first index of an array is ____.",
-        choices: ["1. 0", "2. 1", "3. 8", "4. any"],
+        questionText: "The first index of an array is ____.",
+        options: ["1. 0", "2. 1", "3. 8", "4. any"],
         answer: "1. 0"
     },
     {
-        question: "How to write an IF statement in JavaScript?",
-        choices: ["1. if i == 5 then", "2. if i = 5 then", "3. if(i == 5)", "4. if i = 5"],
+        questionText: "How to write an IF statement in JavaScript?",
+        options: ["1. if i == 5 then", "2. if i = 5 then", "3. if(i == 5)", "4. if i = 5"],
         answer: "3. if(i == 5)"
     },
     {
-        question: "How do you add a comment in a JavaScript?",
-        choices: ["1. //This is a comment", "2. <!--This is a comment-->", "3. 'This is a comment", "4. * This is a comment *"],
+        questionText: "How do you add a comment in a JavaScript?",
+        options: ["1. //This is a comment", "2. <!--This is a comment-->", "3. 'This is a comment", "4. * This is a comment *"],
         answer: "1. //This is a comment"
     },
     {
-        question: "Which event occurs when the user clicks on an HTML element?",
-        choices: ["1. onclick", "2. onchange", "3. onmouseover", "4. onmouseclick"],
+        questionText: "Which event occurs when the user clicks on an HTML element?",
+        options: ["1. onclick", "2. onchange", "3. onmouseover", "4. onmouseclick"],
         answer: "1. onclick"
     },
     {
-        question: "Which of the following is a statement that can be used to terminate a loop, switch or label statement?",
-        choices: ["1. break", "2. stop", "3. halt", "4. exit"],
+        questionText: "Which of the following is a statement that can be used to terminate a loop, switch or label statement?",
+        options: ["1. break", "2. stop", "3. halt", "4. exit"],
         answer: "1. break"
     }
 ];
@@ -120,8 +120,8 @@ function displayQuestion() {
   let question = questions[currentQuestion];
   let options = question.options;
 
-  let h2QuestionElement = document.querySelector("#question");
-  h2QuestionElement.textContent = question.question;
+  let h2QuestionElement = document.querySelector("#question-text");
+  h2QuestionElement.textContent = question.questionText;
 
   for (let i = 0; i < options.length; i++) {
     let option = options[i];
